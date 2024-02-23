@@ -27,7 +27,8 @@
 }
 
 .bookAdd {
-    background-color: gray;
+    background-color: rgb(212, 190, 65);
+    padding: 30px;
     z-index: 5;
 }
 
@@ -35,10 +36,28 @@
     background-color: black;
 }
 
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modalContent > span {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .modalContent > .close {
     font-weight: bold;
     font-size: 24px;
     cursor: pointer;
+}
+
+.modalContent > form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .body {
