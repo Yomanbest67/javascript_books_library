@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: brown;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
+    z-index: 1;
+}
+
+.header > button {
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bookAdd {
+    background-color: gray;
+    z-index: 5;
+}
+
+.bookAdd::backdrop {
+    background-color: black;
+}
+
+.modalContent > .close {
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.body {
+    flex: 2 1 0;
+    background-color: beige;
+    padding: 20px;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.book {
+    border: 1px solid black;
+    background-color: white;
+    margin: 10px;
+    padding: 13px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+    border-radius: 10px;
+}
+
+.book > button {
+    margin: 5px;
+}
+
+.footer {
+    background-color: brown;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+}

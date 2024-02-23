@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            My library
+
+            <button class="addBook">Add Book</button>
+        </div>
+
+        <div class="body">
+            <dialog class="bookAdd">
+
+                <div class="modalContent">
+                    <span class="close">&times;</span>
+                    <div>
+                        <label for="book">Book Name:</label>
+                        <input type="text" name="book" id="book-name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="book-author">Author:</label>
+                        <input type="text" name="book-author" id="book-author" required>
+                    </div>
+                    
+                    <div>
+                        <label for="pages">Pages:</label>
+                        <input type="number" name="pages" id="pages" required>
+                    </div>
+                    
+                    <div>
+                        <label for="read">Have read?:</label>
+                        <select id="read">
+                            <option value="default" required>Choose...</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+
+                    <form method="dialog">
+                        <button class="add">Add</button>
+                    </form>
+                </div>
+
+            </dialog>
+
+            <div class="library"></div>
+
+        </div>
+
+
+        <div class="footer"> Copyright @2024 Yomanbest67</div>
+    </div>
+
+
+
+
+
+
+    <script src="script2.js"></script>
+</body>
+</html>
